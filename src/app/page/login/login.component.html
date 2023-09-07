@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="container">
+  <mat-card>
+
+    <mat-card-header>
+      <mat-card-title>Login to App Order Food</mat-card-title>
+      <mat-card-subtitle>by MSX</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <mat-form-field>
+        <mat-label>Wprowadź e-mail</mat-label>
+        <input matInput placeholder="imie.nazwisko@netrix.com.pl" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMsg()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Wprowadź hasło</mat-label>
+        <input matInput [type]="hidePassword ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Ukryj hasło'" [attr.aria-pressed]="hidePassword">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button mat-raised-button color="warn">Zaloguj</button>
+
+    </mat-card-content>
+  </mat-card>
+</div>

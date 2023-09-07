@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f4f4f8}
+
+// #ff724c -> aktywne miejsca -> focus | pomarańczowy
+// #fdbf50 -> wyróżnienia -> żółty
+// #f4f4f8 -> tło | biały
+// #2a2c41 -> kolor pogrubionej czcionki | ciemny fiolet
+
+.active {
+  background-color: #ff724c;
+}
