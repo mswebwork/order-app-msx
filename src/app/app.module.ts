@@ -16,6 +16,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HistoryOrderComponent } from './page/history-order/history-order.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { PaymentsComponent } from './page/payments/payments.component';
+import { HistOrderItemComponent } from './component/hist-order-item/hist-order-item.component';
+import { HistoryOrderDetailsComponent } from './page/history-order/history-order-details/history-order-details.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { PaymentsComponent } from './page/payments/payments.component';
     FooterComponent,
     HistoryOrderComponent,
     MenuComponent,
-    PaymentsComponent
+    PaymentsComponent,
+    HistOrderItemComponent,
+    HistoryOrderDetailsComponent
   ],
   imports: [
     BrowserModule,

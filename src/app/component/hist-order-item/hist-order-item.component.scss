@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2a2c41;
+  border-radius: 4px;
+  padding: 0 10px;
+  background-color: #f4f4f8;
+  margin-top: 15px;
+}
+
+.item p {
+  margin-bottom: 0;
+  width: 100%;
+}
