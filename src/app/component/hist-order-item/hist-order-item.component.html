@@ -1,19 +1,26 @@
-<div class="items">
+<div [class]="['items', payment]">
+
+  <div class="item day">
+    <p>{{data.date}}</p>
+  </div>
 
   <div class="item company">
-    <p>Pan obiadek</p>
+    <p>{{data.company}}</p>
   </div>
 
   <div class="item dish">
-    <p>Danie dnia</p>
+    <p>{{data.dish}}</p>
   </div>
 
   <div class="item price">
-    <p>20.00 zł</p>
+    <p>{{data.price}}</p>
   </div>
 
-  <div class="item pay">
-    <p>Zapłacono</p>
+  <div class="item payment" [ngSwitch]="payment">
+    <p *ngSwitchCase="'pay'">Zapłacono</p>
+    <p *ngSwitchCase="'no-pay'">Nie zapłacono</p>
+    <p *ngSwitchDefault>W realizacji</p>
+
   </div>
 
   <div class="item show-more">

@@ -3,10 +3,16 @@
 
   <div class="box">
 
-    <app-hist-order-item></app-hist-order-item>
-    <app-hist-order-item></app-hist-order-item>
-    <app-hist-order-item></app-hist-order-item>
-    <app-hist-order-item></app-hist-order-item>
+    <ng-container *ngFor="let items of list_value">
+      <app-hist-order-item
+        [payment] = items.payment
+        [data] = items.details
+
+      ></app-hist-order-item>
+    </ng-container>
+
+
+
 
   </div>
 

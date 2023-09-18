@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-hist-order-item',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./hist-order-item.component.scss']
 })
 export class HistOrderItemComponent {
+
+  @Input() payment: string = '';
+
+  @Input() data: any;
 
 }
